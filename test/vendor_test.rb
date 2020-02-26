@@ -38,7 +38,7 @@ class ItemTest < Minitest::Test
     assert_equal ({@item1=>55, @item2=>12}), @vendor.inventory
   end
 
-  def tests_it_can_calculate_its_potential_revenue
+  def test_it_can_calculate_its_potential_revenue
     @vendor.stock(@item1, 30)
     @vendor.stock(@item1, 25)
     @vendor.stock(@item2, 12)
